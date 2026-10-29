@@ -21,7 +21,7 @@ hero:
 
 # Main site (CompBioChem Tutorials) and this repository.
 home_url: https://arvpinto.github.io/
-repo_url: https://github.com/arvpinto/pka_compare
+repo_url: https://github.com/arvpinto/pka_comparison
 
 # The page uses its own layout and stylesheet (no remote theme), matching the main site.
 plugins:

@@ -17,8 +17,8 @@
 | <a href="pka_compare.py">pka_compare.py</a> | The pipeline: structure cleaning, predictors, consensus, flags, tables, heatmap and PDB with state names |
 | <a href="create_pka_env.sh">create_pka_env.sh</a> | Builds a conda environment with every predictor, including DelPhiPKa compiled from source |
 | <a href="example/4LZT.pdb">example/4LZT.pdb</a> | Triclinic hen egg-white lysozyme at 0.95 &Aring; (PDB 4LZT) |
-| <a href="https://github.com/arvpinto/pka_compare/tree/main/example/4LZT_pka" target="_blank">example/4LZT_pka/</a> | Output of the lysozyme run shown below: summary, per-site table, heatmap and structures |
-| <a href="https://github.com/arvpinto/pka_compare/tree/main/example/tleap" target="_blank">example/tleap/</a> | tleap input used to build the lysozyme topology from the state-named PDB |
+| <a href="https://github.com/arvpinto/pka_comparison/tree/main/example/4LZT_pka" target="_blank">example/4LZT_pka/</a> | Output of the lysozyme run shown below: summary, per-site table, heatmap and structures |
+| <a href="https://github.com/arvpinto/pka_comparison/tree/main/example/tleap" target="_blank">example/tleap/</a> | tleap input used to build the lysozyme topology from the state-named PDB |
 | <a href="example/render_structure.py">example/render_structure.py</a> | PyMOL script for the picture at the top of this page |
 
 ---
