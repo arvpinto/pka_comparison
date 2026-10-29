@@ -1,0 +1,28 @@
+title: Comparing protein pKa predictors to assign protonation states
+description: Run PROPKA3, PypKa, DelPhiPKa, pKAI and pKAI+ on the same protein structure, merge their pKa values into one table and assign protonation states at a target pH by consensus, with hen egg-white lysozyme (4LZT) as the worked example.
+author: Alexandre V. Pinto
+lang: en
+image: /assets/img/social.jpg
+
+# Shown at the top of the page. "hero" is the image next to the title: lysozyme
+# (4LZT) with its titratable groups coloured by the consensus pKa - pH, blue when
+# protonated and red when deprotonated at pH 7, disulfides in yellow
+# (made with example/render_structure.py).
+topic: Molecular dynamics
+topic_color: "#4d86ff"
+tools: [PROPKA3, PypKa, DelPhiPKa, pKAI, Python]
+hero:
+  src: /assets/img/lysozyme_sites.webp
+  width: 1598
+  height: 1243
+  alt: Lysozyme cartoon with the titratable side chains coloured from red (deprotonated) to blue (protonated) by their consensus pKa relative to pH 7, and the disulfide bonds in yellow
+
+# A single page, not part of a series: no "sections" list and no previous / next links.
+
+# Main site (CompBioChem Tutorials) and this repository.
+home_url: https://arvpinto.github.io/
+repo_url: https://github.com/arvpinto/pka_compare
+
+# The page uses its own layout and stylesheet (no remote theme), matching the main site.
+plugins:
+  - jekyll-seo-tag
