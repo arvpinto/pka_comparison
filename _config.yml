@@ -4,7 +4,8 @@ author: Alexandre V. Pinto
 lang: en
 image: /assets/img/social.jpg
 
-# Shown at the top of the page. "hero" is the image next to the title: lysozyme
+# Shown at the top of the page. The topic name and colour are the ones this
+# entry has on the home page (arvpinto.github.io, _data/categories.yml). "hero" is the image next to the title: lysozyme
 # (4LZT) with its titratable groups coloured by the consensus pKa - pH, blue when
 # protonated and red when deprotonated at pH 7, disulfides in yellow
 # (made with example/render_structure.py).
@@ -19,10 +20,22 @@ hero:
 
 # A single page, not part of a series: no "sections" list and no previous / next links.
 
-# Main site (CompBioChem Tutorials) and this repository.
+# Home page (the menu bar links to its Portfolio and About sections) and this repository.
 home_url: https://arvpinto.github.io/
+home_label: Portfolio
 repo_url: https://github.com/arvpinto/pka_comparison
 
-# The page uses its own layout and stylesheet (no remote theme), matching the main site.
+# Name and affiliation shown under the title (same lines as on the home page).
+author_degree: PhD in Chemistry
+affiliation:
+  - High Performance Computing in Molecular Modelling Research Group, LAQV-REQUIMTE
+  - Department of Chemistry and Biochemistry, Faculty of Sciences, University of Porto
+
+# Licence named in the footer (the LICENSE file of the repository).
+license:
+  name: CC0 1.0 Universal
+  url: https://github.com/arvpinto/pka_comparison/blob/main/LICENSE
+
+# The page uses its own layout and stylesheet (no remote theme), matching the home page.
 plugins:
   - jekyll-seo-tag
