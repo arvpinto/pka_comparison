@@ -1,0 +1,74 @@
+pka_compare.py v1.1.0  -  2026-10-28 18:12
+Input structure : 4LZT.pdb
+Target pH       : 7   (ambiguity margin +/- 1 pH units)
+Consensus       : median of available predictions
+Chains          : A   disulfide CYS: 8   metal ions: 0
+Warning         : Alternate locations present: kept altloc 'A' (first conformer where 'A' is absent).
+
+Method status
+  PROPKA3   ok, 32 sites  (0.2 s)
+  PypKa     ok, 21 sites  (65.7 s)
+  DelPhiPKa ok, 27 sites  (292.7 s)
+  pKAI+     ok, 27 sites  (0.9 s)
+  pKAI      ok, 27 sites  (0.1 s)
+  DeepKa    skipped (no --deepka-csv or --deepka-cmd)
+  ME-pKa    skipped (no --mepka-csv or --mepka-cmd)
+
+Net charge of titratable sites at pH 7 (sites predicted by the method; others filled with consensus)
+  PROPKA3      +8.25   (32)
+  PypKa        +7.78   (21)
+  DelPhiPKa    +7.93   (27)
+  pKAI+        +8.00   (19)
+  pKAI         +7.93   (19)
+  Consensus    +7.93   (32)
+
+Sites needing attention: 3 of 40
+   site  PROPKA3  PypKa  DelPhiPKa  pKAI+  pKAI  cons  spread         state AMBER  flag    reasons
+ A:NTR1     7.46   7.44          -      -     -  7.45    0.02   protonated? NH3+? CHECK |pKa-pH|<1
+A:HIS15     6.69   5.72       6.38   6.56  6.39  6.39    0.97 deprotonated?  HIE? CHECK |pKa-pH|<1
+A:GLU35     6.36   4.76       3.63   4.29  4.10  4.29    2.73  deprotonated   GLU CHECK  spread>=2
+
+All sites
+    site  PROPKA3  PypKa  DelPhiPKa  pKAI+  pKAI  cons  spread         state AMBER  flag    reasons
+  A:NTR1     7.46   7.44          -      -     -  7.45    0.02   protonated? NH3+? CHECK |pKa-pH|<1
+  A:LYS1    10.24  10.38      10.68  10.34 10.26 10.34    0.44    protonated   LYS    OK           
+  A:ARG5    12.12      -      12.48      -     - 12.30    0.36    protonated   ARG    OK           
+  A:CYS6        -      -          -   9.56 10.83     -       -     disulfide   CYX  note  disulfide
+  A:GLU7     4.02   3.27       3.17   3.89  3.56  3.56    0.85  deprotonated   GLU    OK           
+ A:LYS13    11.49  11.19      10.51  10.82 11.16 11.16    0.98    protonated   LYS    OK           
+ A:ARG14    12.32      -      12.20      -     - 12.26    0.12    protonated   ARG    OK           
+ A:HIS15     6.69   5.72       6.38   6.56  6.39  6.39    0.97 deprotonated?  HIE? CHECK |pKa-pH|<1
+ A:ASP18     3.53   3.15       3.11   3.36  2.92  3.15    0.61  deprotonated   ASP    OK           
+ A:TYR20     9.52  10.23          -   9.85 10.11  9.98    0.71    protonated   TYR    OK           
+ A:ARG21    12.51      -      12.20      -     - 12.35    0.31    protonated   ARG    OK           
+ A:TYR23     9.73   9.62          -   9.74  9.85  9.74    0.23    protonated   TYR    OK           
+ A:CYS30        -      -          -  10.17 11.87     -       -     disulfide   CYX  note  disulfide
+ A:LYS33    10.11   9.07      10.94  10.48 10.47 10.47    1.87    protonated   LYS    OK           
+ A:GLU35     6.36   4.76       3.63   4.29  4.10  4.29    2.73  deprotonated   GLU CHECK  spread>=2
+ A:ARG45    12.31      -      12.12      -     - 12.22    0.19    protonated   ARG    OK           
+ A:ASP48     1.76   2.07       3.30   3.13  2.47  2.47    1.54  deprotonated   ASP    OK           
+ A:ASP52     3.58   2.84       3.32   3.03  2.31  3.03    1.27  deprotonated   ASP    OK           
+ A:TYR53    11.40  11.22          -  10.75 11.86 11.31    1.11    protonated   TYR    OK           
+ A:ARG61    12.98      -      12.56      -     - 12.77    0.42    protonated   ARG    OK           
+ A:CYS64        -      -          -  10.45 13.02     -       -     disulfide   CYX  note  disulfide
+ A:ASP66     1.91   2.62       2.62   2.88  1.94  2.62    0.97  deprotonated   ASP    OK           
+ A:ARG68    13.04      -      12.29      -     - 12.67    0.75    protonated   ARG    OK           
+ A:ARG73    12.11      -      12.18      -     - 12.15    0.07    protonated   ARG    OK           
+ A:CYS76        -      -          -  10.80 12.91     -       -     disulfide   CYX  note  disulfide
+ A:CYS80        -      -          -  10.54 12.25     -       -     disulfide   CYX  note  disulfide
+ A:ASP87     3.11   2.57       2.80   3.29  2.77  2.80    0.72  deprotonated   ASP    OK           
+ A:CYS94        -      -          -  11.58 14.06     -       -     disulfide   CYX  note  disulfide
+ A:LYS96    10.09  11.16      11.01  10.74 11.03 11.01    1.08    protonated   LYS    OK           
+ A:LYS97    10.61  11.10      10.98  10.79 11.14 10.98    0.53    protonated   LYS    OK           
+A:ASP101     3.93   3.75       3.65   3.63  3.46  3.65    0.47  deprotonated   ASP    OK           
+A:ARG112    12.23      -      12.25      -     - 12.24    0.02    protonated   ARG    OK           
+A:ARG114    12.21      -      12.18      -     - 12.20    0.03    protonated   ARG    OK           
+A:CYS115        -      -          -  10.87 14.18     -       -     disulfide   CYX  note  disulfide
+A:LYS116    10.25  10.10      10.53  10.31 10.13 10.25    0.43    protonated   LYS    OK           
+A:ASP119     2.96   2.71       3.20   3.30  2.90  2.96    0.59  deprotonated   ASP    OK           
+A:ARG125    13.11      -      12.42      -     - 12.76    0.69    protonated   ARG    OK           
+A:CYS127        -      -          -   9.77 11.55     -       -     disulfide   CYX  note  disulfide
+A:ARG128    12.48      -      12.01      -     - 12.24    0.47    protonated   ARG    OK           
+A:CTR129     2.22   1.92          -      -     -  2.07    0.30  deprotonated  COO-    OK           
+
+Names ending in '?' are within the ambiguity margin of the target pH; names with '*' have no standard residue in that force field family.

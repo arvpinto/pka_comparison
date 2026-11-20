@@ -1,0 +1,11 @@
+source leaprc.protein.ff19SB
+source leaprc.water.opc
+prot = loadpdb 4LZT_amber.pdb
+bond prot.6.SG prot.127.SG
+bond prot.30.SG prot.115.SG
+bond prot.64.SG prot.80.SG
+bond prot.76.SG prot.94.SG
+charge prot
+check prot
+saveamberparm prot 4LZT.prmtop 4LZT.inpcrd
+quit
